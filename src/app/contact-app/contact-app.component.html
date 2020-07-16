@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <div class="col-12 text-center my-5">
+    <h1 class="display-4">Contact Me</h1>
+    <br>
+</div>
+    <div class="media">
+        <img class="rounded float-left" src="assets/img/img5.png" alt="image">
+        <div class="media-body">
+          <h5 class="mt-0">{{name | uppercase}}</h5>
+          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+          <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        </div>
+      </div>
+</div>
+
+<div id="div1">
+<br>
+    <h4>Email</h4>
+    <input id="input1" type="text" class="form-control"
+        (input)="onUpdateEmail($event)" placeholder="example@email.com">
+
+    <p> {{ email | lowercase }}</p>
+
+    <button class="btn btn-primary" 
+        (click)= "onAdd()">Add Email</button>
+
+    <button id="btnReset" class="btn btn-secondary" 
+                (click)= "onReset()">Remove email</button>
+
+</div>
+
+
+<hr class="ml-4">
+
+<h5 id="emailsAdded" *ngIf="emailsAdded">Emails Added:</h5>
+
+<div id="div2" class="col-12">
+    <div *ngFor="let email of vetEmail">
+          <p>
+            {{ email | lowercase }}
+          </p>
+   </div>
+</div>
+  
+
+
+
+
+
+
+
+
+

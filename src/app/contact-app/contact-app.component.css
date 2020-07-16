@@ -1,0 +1,28 @@
+#input1 {
+    width: 400px;
+}
+
+#div1{
+    padding: 10px;
+}
+#div2{
+    padding: 10px;
+}
+
+#paragraph {
+    padding: 50px;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+
+#btnReset{
+    position: relative;
+    left: 10px;
+}
+
+#emailsAdded{
+    position: relative;
+    padding: 10px;
+}
